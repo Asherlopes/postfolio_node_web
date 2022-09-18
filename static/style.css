@@ -1,0 +1,307 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  
+    scroll-behavior: smooth; /*scrolls smooths*/
+    
+    
+}
+
+body{
+    font-size: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+section,header,ul,li,a,form{
+    box-sizing: border-box; /*due to ths its not going out of box*/ 
+}
+header{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 999; /* cuz of this navbar is staying fixed n comin along*/
+}
+#menu li{
+    list-style: none;
+    display: inline-block;  /* comin in centre of image*/
+    margin: 10px;
+
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#menu a:hover{
+    color: darkgreen;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    float: left; /*content will get displayed 1 after 1*/
+    position: relative;
+    
+}
+#home{
+    
+    background-color: black;
+  
+    background-image: url("");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+ 
+    
+   
+}
+#aboutus{
+    background-color:black;
+    
+   
+}
+#projects{
+    background-color: black;
+   height: auto;
+   
+}
+#resume{
+    background-color: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    
+    
+}
+#contact{
+    background-color: black;
+    height: auto;
+
+}
+.container button{
+    text-align: center;
+}
+
+.container {
+
+position: absolute;
+
+top: 30%;
+
+
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container1{
+
+border: 3px solid whitesmoke;
+padding: 3px 4px;
+margin: 70px 30px;
+width: 400px;
+text-align: center;
+
+
+   
+
+}
+
+.container4{
+
+    border: 3px solid whitesmoke;
+    padding: 3px 4px;
+    margin: 70px 30px;
+    width: 350px;
+
+    
+    
+       
+    
+    }
+    .container4 a{
+        text-decoration: none;
+        color: white;
+    }
+    .container4:hover{
+        border: 3px solid darkgreen;
+        transition: 2s;
+        border-radius: 8px;
+        background-color:grey;
+        color:white;
+       
+    }
+
+/*.container1:/*media query if its in laptop keep width 350 if its in phone 400*/
+.btn{
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: DARKGREEN;
+   
+}
+.btn a{
+   text-decoration: none;
+   color: white;
+  
+}
+.btn a:hover{
+    color: black;
+    transition: 0.9s;
+    padding: 12px 8px;
+ 
+}
+h2{ 
+    top: 20%;
+    text-align: center;
+    color: darkgreen;
+}
+
+#about{
+    
+        margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+
+}
+#home h3{
+    text-align: center;
+    margin-top: 10%;
+    color: darkolivegreen;
+
+}
+
+#home p{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 8s steps(60, end); 
+     color:white;
+     
+     font-size: 30px;
+ 
+  
+}
+
+@keyframes type{
+    from{
+        width:10%;
+    }
+}
+#contact h2{
+    margin-top: 10%;
+    text-align: center;
+    color: darkgreen ;
+
+
+}
+
+#para{
+  
+   font-size: 20px;
+}
+
+.form1{
+    align-items: center;
+    
+
+}
+.form-group{
+    margin: 8px 6px;
+}
+label{
+ 
+    font-size: 20px;
+    text-align: center;
+    color:white;
+
+   
+}
+textarea{
+    width:20em;  
+    
+}
+input{
+    width:20em;
+    height: 20px;
+}
+
+.form-control:hover{
+    border: 3px solid darkgreen;
+
+}
+.btn1{
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 7px;
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    margin-left: 8px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.btn1:hover{
+    width: 100px;
+    height: 40px;
+    background-color: darkgreen;
+
+
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+}
+.box3{
+     border: 3px solid white;
+    
+    margin-left: 10%;
+
+}
+#projects h2{
+    margin-top: 10%;
+}
+
+.container5{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* top: 50%;
+    left: 50%;
+        transform: translate(-50%,-50%); */
+}
+#boxres{
+   
+border: 3px solid whitesmoke; 
+padding: 3px 4px;
+margin: 70px 30px;
+width: 300px;
+height: 300px;
+/* text-align: center;
+align-items: center;
+justify-content: center; */
+}
+#boxres:hover{
+    border: 3px solid darkgreen;
+    transition: 2s;
+    border-radius: 8px;
+    background-color:grey;
+    color:white;
+   
+}
+
+
